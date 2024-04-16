@@ -29,7 +29,16 @@
       <!--End col-->
     </div>
     <!--End row-->
-    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const form = document.querySelector('form')
+        form.onsubmit = () => {
+          const first_name = form.querySelector('#id_first_name').value;
+            alert(`Your reservation has been made successfully, ${first_name}. Please check your email for more info.`);
+        }
+          
+      });
+    </script> 
   </article>
 </section>
 {% endblock %}
